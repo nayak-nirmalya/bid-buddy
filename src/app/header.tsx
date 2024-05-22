@@ -1,16 +1,17 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { formatToDollar } from "@/util/currency";
+import { signIn, signOut, useSession } from "next-auth/react";
+import React, { useRef, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import {
   NotificationCell,
   NotificationFeedPopover,
   NotificationIconButton,
 } from "@knocklabs/react";
-import { signIn, signOut, useSession } from "next-auth/react";
-import Image from "next/image";
-import Link from "next/link";
-import { useRef, useState } from "react";
+
+import { Button } from "@/components/ui/button";
+import { formatToDollar } from "@/util/currency";
 
 export function Header() {
   const [isVisible, setIsVisible] = useState(false);

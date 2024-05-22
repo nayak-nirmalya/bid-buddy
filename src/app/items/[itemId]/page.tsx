@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { getBidsForItem } from "@/data-access/bids";
 import { getItem } from "@/data-access/items";
-import { pageTitleStyles } from "@/styles";
 import { isBidOver } from "@/util/bids";
 import { formatToDollar } from "@/util/currency";
 import { getImageUrl } from "@/util/files";
@@ -30,7 +29,7 @@ export default async function ItemPage({
       <div className="space-y-8 flex flex-col items-center mt-12">
         <Image src="/package.svg" width="200" height="200" alt="Package" />
 
-        <h1 className={pageTitleStyles}>Item not found</h1>
+        <h1 className="text-4xl font-bold">Item not found</h1>
         <p className="text-center">
           The item you&apos;re trying to view is invalid.
           <br />
@@ -55,7 +54,7 @@ export default async function ItemPage({
     <main className="space-y-8">
       <div className="flex gap-8">
         <div className="flex flex-col gap-6">
-          <h1 className={pageTitleStyles}>
+          <h1 className="text-4xl font-bold">
             <span className="font-normal">Auction for</span> {item.name}
           </h1>
           {isBidOver(item) && (

@@ -1,11 +1,12 @@
 "use client";
 
 import "@knocklabs/react/dist/index.css";
-import { env } from "@/env";
+
 import { KnockProvider, KnockFeedProvider } from "@knocklabs/react";
 import { useSession } from "next-auth/react";
+import React, { ReactNode } from "react";
 
-import { ReactNode } from "react";
+import { env } from "@/env";
 
 export function AppKnockProviders({ children }: { children: ReactNode }) {
   const session = useSession();

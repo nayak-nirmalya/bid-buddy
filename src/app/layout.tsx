@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
+import { SessionProvider } from "next-auth/react";
+
 import { cn } from "@/lib/utils";
 import { Header } from "@/app/header";
-import { SessionProvider } from "next-auth/react";
 import { AppKnockProviders } from "@/app/knock-provider";
+
+import "./globals.css";
 
 const fontSans = FontSans({
   subsets: ["latin"],

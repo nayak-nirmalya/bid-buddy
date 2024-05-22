@@ -3,7 +3,6 @@ import { ItemCard } from "@/app/item-card";
 import { auth } from "@/auth";
 import { database } from "@/db/database";
 import { items } from "@/db/schema";
-import { pageTitleStyles } from "@/styles";
 import { eq } from "drizzle-orm";
 
 export default async function MyAuctionPage() {
@@ -21,7 +20,7 @@ export default async function MyAuctionPage() {
 
   return (
     <main className="space-y-8">
-      <h1 className={pageTitleStyles}>Your Current Auctions</h1>
+      <h1 className="text-4xl font-bold">Your Current Auctions</h1>
 
       {hasItems ? (
         <div className="grid grid-cols-4 gap-8">
