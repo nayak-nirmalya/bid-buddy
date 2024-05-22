@@ -1,9 +1,10 @@
+import { eq } from "drizzle-orm";
+
 import { EmptyState } from "@/app/auctions/empty-state";
 import { ItemCard } from "@/app/item-card";
 import { auth } from "@/auth";
 import { database } from "@/db/database";
 import { items } from "@/db/schema";
-import { eq } from "drizzle-orm";
 
 export default async function MyAuctionPage() {
   const session = await auth();

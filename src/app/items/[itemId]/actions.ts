@@ -1,12 +1,12 @@
 "use server";
 
+import { eq } from "drizzle-orm";
+import { revalidatePath } from "next/cache";
+import { Knock } from "@knocklabs/node";
+
 import { auth } from "@/auth";
 import { database } from "@/db/database";
 import { bids, items } from "@/db/schema";
-import { eq } from "drizzle-orm";
-import { revalidatePath } from "next/cache";
-
-import { Knock } from "@knocklabs/node";
 import { env } from "@/env";
 import { isBidOver } from "@/util/bids";
 

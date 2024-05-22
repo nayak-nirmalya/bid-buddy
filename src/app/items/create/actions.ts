@@ -1,10 +1,10 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+
 import { database } from "@/db/database";
 import { items } from "@/db/schema";
 import { auth } from "@/auth";
-import { redirect } from "next/navigation";
 import { getSignedUrlForS3Object } from "@/lib/s3";
 
 export async function createUploadUrlAction(key: string, type: string) {

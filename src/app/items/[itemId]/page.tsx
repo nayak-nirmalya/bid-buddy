@@ -1,3 +1,7 @@
+import { formatDistance } from "date-fns";
+import Image from "next/image";
+import Link from "next/link";
+
 import { createBidAction } from "@/app/items/[itemId]/actions";
 import { auth } from "@/auth";
 import { Badge } from "@/components/ui/badge";
@@ -7,9 +11,6 @@ import { getItem } from "@/data-access/items";
 import { isBidOver } from "@/util/bids";
 import { formatToDollar } from "@/util/currency";
 import { getImageUrl } from "@/util/files";
-import { formatDistance } from "date-fns";
-import Image from "next/image";
-import Link from "next/link";
 
 function formatTimestamp(timestamp: Date) {
   return formatDistance(timestamp, new Date(), { addSuffix: true });
