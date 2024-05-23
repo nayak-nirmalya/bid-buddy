@@ -41,7 +41,7 @@ export default function CreatePage() {
           });
 
           const name = formData.get("name") as string;
-          const startingPrice = parseInt(
+          const startingPrice = parseFloat(
             formData.get("startingPrice") as string
           );
           const startingPriceInCents = Math.floor(startingPrice * 100);
