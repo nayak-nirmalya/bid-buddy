@@ -1,7 +1,9 @@
 import { ItemCard } from "@/app/item-card";
 import { database } from "@/db/database";
+import { auth } from "@/auth";
 
 export default async function HomePage() {
+  const session = await auth();
   const allItems = await database.query.items.findMany();
 
   return (
@@ -10,7 +12,11 @@ export default async function HomePage() {
 
       <div className="grid grid-cols-4 gap-8">
         {allItems.map((item) => (
-          <ItemCard key={item.id} item={item} />
+          <ItemCard
+            key={item.id}
+            item={item}
+            owner={item.userId === session?.user.id}
+          />
         ))}
       </div>
     </main>

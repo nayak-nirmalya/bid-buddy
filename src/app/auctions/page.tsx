@@ -26,7 +26,7 @@ export default async function MyAuctionPage() {
       {hasItems ? (
         <div className="grid grid-cols-4 gap-8">
           {allItems.map((item) => (
-            <ItemCard key={item.id} item={item} />
+            <ItemCard key={item.id} item={item} owner />
           ))}
         </div>
       ) : (

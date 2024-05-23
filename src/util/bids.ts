@@ -1,5 +1,3 @@
 import { Item } from "@/db/schema";
 
-export function isBidOver(item: Item) {
-  return item.endDate < new Date();
-}
+export const isBidOver = (item: Item) => item.endDate < new Date();

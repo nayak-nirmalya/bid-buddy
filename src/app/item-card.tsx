@@ -8,7 +8,7 @@ import { isBidOver } from "@/util/bids";
 import { formatToDollar } from "@/util/currency";
 import { getImageUrl } from "@/util/files";
 
-export function ItemCard({ item }: { item: Item }) {
+export function ItemCard({ item, owner }: { item: Item; owner: boolean }) {
   return (
     <div key={item.id} className="border p-8 rounded-xl space-y-2">
       <Image
@@ -32,7 +32,7 @@ export function ItemCard({ item }: { item: Item }) {
 
       <Button asChild variant={isBidOver(item) ? "outline" : "default"}>
         <Link href={`/items/${item.id}`}>
-          {isBidOver(item) ? "View Bid" : "Place Bid"}
+          {isBidOver(item) ? "View Bid" : owner ? "View bid" : "Place Bid"}
         </Link>
       </Button>
     </div>
