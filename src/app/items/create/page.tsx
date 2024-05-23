@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { nanoid } from "nanoid";
 
 import {
   createItemAction,
@@ -30,7 +31,7 @@ export default function CreatePage() {
           const formData = new FormData(form);
           const file = formData.get("file") as File;
 
-          const uploadUrl = await createUploadUrlAction(file.name, file.type);
+          const uploadUrl = await createUploadUrlAction(nanoid(), file.type);
 
           await fetch(uploadUrl, {
             method: "PUT",
