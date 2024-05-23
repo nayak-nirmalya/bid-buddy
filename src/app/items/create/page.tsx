@@ -31,7 +31,9 @@ export default function CreatePage() {
           const formData = new FormData(form);
           const file = formData.get("file") as File;
 
-          const uploadUrl = await createUploadUrlAction(nanoid(), file.type);
+          const fileName = nanoid();
+
+          const uploadUrl = await createUploadUrlAction(fileName, file.type);
 
           await fetch(uploadUrl, {
             method: "PUT",
@@ -47,7 +49,7 @@ export default function CreatePage() {
           await createItemAction({
             name,
             startingPrice: startingPriceInCents,
-            fileName: file.name,
+            fileName,
             endDate: date,
           });
         }}
