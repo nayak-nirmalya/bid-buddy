@@ -63,12 +63,9 @@ export async function createBidAction(itemId: number) {
   }[] = [];
 
   for (const bid of currentBids) {
-    if (
-      bid.userId !== userId &&
-      !recipients.find((recipient) => recipient.id === bid.userId)
-    ) {
+    if (bid.userId !== userId) {
       recipients.push({
-        id: bid.userId + "",
+        id: bid.userId,
         name: bid.user.name ?? "Anonymous",
         email: bid.user.email,
       });
