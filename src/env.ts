@@ -5,6 +5,7 @@ export const env = createEnv({
   server: {
     DB_HOST: z.string().min(2),
     DB_PORT: z.number().min(4),
+    DB_USER: z.string().min(4),
     DB_PASSWORD: z.string().min(6),
     DATABASE_URL: z.string().url(),
     NODE_ENV: z.string().min(1),
@@ -21,6 +22,7 @@ export const env = createEnv({
   runtimeEnv: {
     DB_HOST: process.env.DB_HOST,
     DB_PORT: process.env.DB_PORT,
+    DB_USER: process.env.DB_USER,
     DB_PASSWORD: process.env.DB_PASSWORD,
     NODE_ENV: process.env.NODE_ENV,
     DATABASE_URL: process.env.DATABASE_URL,
