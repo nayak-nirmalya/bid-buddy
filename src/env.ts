@@ -4,7 +4,7 @@ import { createEnv } from "@t3-oss/env-nextjs";
 export const env = createEnv({
   server: {
     DB_HOST: z.string().min(2),
-    DB_PORT: z.number().min(4),
+    DB_PORT: z.coerce.number(),
     DB_USER: z.string().min(4),
     DB_PASSWORD: z.string().min(6),
     DB_NAME: z.string().min(4),
