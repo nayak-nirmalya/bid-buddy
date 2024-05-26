@@ -7,7 +7,7 @@ import {
   createItemAction,
   createUploadUrlAction,
 } from "@/app/items/create/actions";
-import { DatePickerDemo } from "@/components/date-picker";
+import { DatePicker } from "@/components/date-picker";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -69,7 +69,7 @@ export default function CreatePage() {
           placeholder="What to start your auction at"
         />
         <Input type="file" name="file"></Input>
-        <DatePickerDemo date={date} setDate={setDate} />
+        <DatePicker date={date} setDate={setDate} />
         <Button className="self-end" type="submit">
           Post Item
         </Button>
