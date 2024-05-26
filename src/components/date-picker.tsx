@@ -20,6 +20,8 @@ export function DatePickerDemo({
   date?: Date;
   setDate: React.Dispatch<React.SetStateAction<Date | undefined>>;
 }) {
+  const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
+
   return (
     <Popover>
       <PopoverTrigger asChild>
