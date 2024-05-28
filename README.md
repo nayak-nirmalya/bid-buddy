@@ -25,7 +25,7 @@ Credits: [Web Dev Cody](https://x.com/webdevcody)
 To get started with this project, run
 
 ```bash
-git clone https://github.com/nayak-nirmalya/casecobra.git
+git clone https://github.com/nayak-nirmalya/bid-buddy.git
 ```
 
 and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!
