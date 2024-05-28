@@ -15,7 +15,7 @@ Credits: [Web Dev Cody](https://x.com/webdevcody)
 - ⌨️ 100% written in TypeScript
 - 🎁 ...much more
 
-## Getting started
+## Getting Started
 
 To get started with this project, run
 
@@ -28,6 +28,20 @@ pnpm dev
 ```
 
 and copy the .env.sample variables into a separate .env file, fill them out & and that's all you need to get started!
+
+## Available Commands
+
+Running commands with npm `pnpm [command]`
+
+| command       | description                              |
+| :------------ | :--------------------------------------- |
+| `dev`         | Starts a development instance of the app |
+| `lint`        | Run typescript lint check with eslint    |
+| `build`       | Start building app for deployment        |
+| `start`       | Run build version of app                 |
+| `db:push`     | Push changes in schema to database       |
+| `db:studio`   | Run drizzle studio to view & edit data   |
+| `db:generate` | Generate migration files                 |
 
 ## License
 
