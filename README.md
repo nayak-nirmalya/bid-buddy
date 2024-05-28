@@ -6,17 +6,12 @@ Credits: [Web Dev Cody](https://x.com/webdevcody)
 
 ## Features
 
-- 🛠️ Complete shop built from scratch in Next.js 14
-- 💻 Beautiful landing page included
-- 🎨 Custom artworks made by a professional illustrator
-- 💳 Secret admin dashboard to manage orders
+- 🛠️ Completely built from scratch in Next.js 14
 - 🖥️ Drag-and-drop file uploads
 - 🛍️ Customers can purchase directly from you
 - 🌟 Clean, modern UI on top of shadcn-ui
-- 🛒 Completely custom phone case configurator
-- 🔑 Authentication using Kinde
-- ✉️ Beautiful thank-you email after purchase
-- ✅ Apple-inspired configuration design
+- 🔑 Authentication using Next-Auth
+- ✉️ Real-time notification with Knock & WebSocket
 - ⌨️ 100% written in TypeScript
 - 🎁 ...much more
 
@@ -28,7 +23,7 @@ To get started with this project, run
 git clone https://github.com/nayak-nirmalya/bid-buddy.git
 ```
 
-and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!
+and copy the .env.sample variables into a separate .env file, fill them out & and that's all you need to get started!
 
 ## License
 
