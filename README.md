@@ -1,8 +1,6 @@
-# CaseCobra - A Modern Fullstack E-Commerce Shop for Custom Phone Cases
+# BidBuddy - A Modern Fullstack Bidding WebSite.
 
-Built with the Next.js 14 App Router, Postgres, TypeScript, Tailwind & Kinde Auth
-
-![Project Image](public/thumbnail.png)
+Built with the Next.js 14 App Router, Postgres, TypeScript, Tailwind CSS, Next-Auth, Docker, Knock, AWS S3, AWS CloudFront, Zod & Prisma.
 
 Credits: [Joscha Neske](https://www.youtube.com/@joshtriedcoding/videos)
 
