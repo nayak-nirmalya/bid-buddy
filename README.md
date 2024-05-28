@@ -1,6 +1,6 @@
 # BidBuddy - A Modern Fullstack Bidding WebSite.
 
-Built with the Next.js 14 App Router, Postgres, TypeScript, Tailwind CSS, Next-Auth, Docker, Knock, AWS S3, AWS CloudFront, Zod & Prisma.
+Built with the Next.js 14 App Router, Postgres, TypeScript, Tailwind CSS, Next-Auth, Docker, Knock, AWS S3, AWS CloudFront, Zod & Drizzle.
 
 Credits: [Web Dev Cody](https://x.com/webdevcody)
 
@@ -21,6 +21,10 @@ To get started with this project, run
 
 ```bash
 git clone https://github.com/nayak-nirmalya/bid-buddy.git
+cd bid-buddy
+
+pnpm install
+pnpm dev
 ```
 
 and copy the .env.sample variables into a separate .env file, fill them out & and that's all you need to get started!
