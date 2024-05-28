@@ -2,7 +2,7 @@
 
 Built with the Next.js 14 App Router, Postgres, TypeScript, Tailwind CSS, Next-Auth, Docker, Knock, AWS S3, AWS CloudFront, Zod & Prisma.
 
-Credits: [Joscha Neske](https://www.youtube.com/@joshtriedcoding/videos)
+Credits: [Web Dev Cody](https://x.com/webdevcody)
 
 ## Features
 
